@@ -1,0 +1,141 @@
+body
+{
+    height:200vh;
+}
+.fontLogo
+          	{
+          		color:white;
+              	text-align: center;
+              	font-size: 25px;
+     		}
+          	
+.mainHead
+          	{
+          		display:flex;
+              	align-items:center;
+              	flex-direction:column;
+              	margin:auto;
+              	border-radius:12px;
+          	}
+.mainImgDiv
+{
+    display:flex;
+    justify-content:space-around ;
+    flex-direction: column;
+    align-items: center;
+}
+.imgDisplay
+{
+    width:20%;
+    height:100%;
+    padding:10px;
+    border-radius: 12px;
+    opacity: 0;
+}
+.imgBlock
+{
+    width:100%;
+    height:300px;
+    display:flex;
+    align-items: center;
+    margin:auto;
+    justify-content: center;
+    
+    
+    padding:10px;
+}
+.glowBorder
+{
+    background-color:black;
+    color:white;
+    font-size:80px;
+    padding:5px;
+    border-radius:12px;
+    display:flex;
+    width:900px;
+  	justify-content:center;
+}
+
+.rotate
+{
+    animation-name: rotation;
+    animation-duration: 3s;
+    animation-direction: alternate;
+
+}
+.left
+{
+    animation-name: leftSlide;
+    animation-duration: 3s;
+    animation-direction: alternate
+}
+.right
+{
+    animation-name: rightSlide;
+    animation-duration: 3s;
+    animation-direction: alternate
+}
+@keyframes leftSlide
+{
+    from
+    {
+        width:0%;
+        opacity: 0;
+    }
+    to
+    {
+        width:20%;
+        opacity: 1;
+    }
+}
+@keyframes rightSlide
+{
+    from
+    {
+        width:0%;
+        opacity: 0;
+    }
+    to
+    {
+        width:20%;
+        opacity: 1;
+    }
+}
+@keyframes rotation
+{
+    from
+    {
+        transform: rotate(0deg);
+        opacity: 0;
+    }
+    to
+    {
+        transform: rotate(360deg);
+        opacity: 1;
+    }
+}
+.secondImgDiv
+{
+    display:flex;
+    width:60%;
+    justify-content: center;
+    margin:auto;
+}
+.imgDiv
+{
+    
+    height:150px;
+    padding:50px;
+    transition: 0.5s;
+}
+.imgDiv:hover
+{
+
+    background-color:rgba(255, 255, 255, 0.397);
+    border:2px solid white;
+    border-radius: 100px;
+}
+body
+{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

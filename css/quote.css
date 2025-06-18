@@ -1,0 +1,109 @@
+
+.first
+          	{
+              	padding-bottom:20px;
+              	background-color:white;
+              	width:80%;
+              	text-align:center ;
+              	margin:auto;
+              	display:flex;
+              	flex-direction: column;
+              	justify-content: center;
+              	align-items: center;
+          	}
+button
+{
+    width:250px;
+    padding:5px;
+    transition:0.2s;
+    font-size:20px;
+}
+input[type="file"]::file-selector-button
+{
+    width:250px;
+    padding:5px;
+    transition:0.2s;
+    font-size:20px;
+}
+input[type="file"]::file-selector-button:hover
+{
+    padding:8px;
+    cursor: pointer;
+}
+button:hover
+{
+    padding:8px;
+    cursor: pointer;
+}
+.imgDiv
+{
+    
+    height:150px;
+    padding:50px;
+    transition: 0.5s;
+}
+.imgDiv:hover
+{
+
+    background-color:rgba(255, 255, 255, 0.397);
+    border:2px solid white;
+    border-radius: 100px;
+}
+.secondImgDiv
+{
+    display:flex;
+    width:60%;
+    justify-content: space-around;
+    margin:auto;
+}
+#temp
+{
+    display:flex;
+    justify-content: center;
+}
+.space
+{
+    padding:5px;
+}
+input
+{
+    
+}
+#radio1
+{
+    height:15px;
+    transition:0.2s;
+}
+#radio2
+{
+    height:15px;
+    transition:0.2s;
+}
+#radio3
+{
+    height:15px;
+    transition:0.2s;
+}
+#radio4
+{
+    height:15px;
+    transition:0.2s;
+}
+#radio1:hover
+{
+    height:25px;
+}
+#radio2:hover
+{
+    height:25px;
+    
+}
+#radio3:hover
+{
+    height:25px;
+    
+}
+#radio4:hover
+{
+    height:25px;
+}
