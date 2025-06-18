@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            No Name - Book a quote
+        </title>
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/quote.css">
+      	<link rel="stylesheet" href="css/nav.css">
+        <link rel="icon" type="image/x-icon" href="/img/favicon-32x32.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charset="UTF-8">
+  		<meta name="description" content="Commercial and Industrial Construction, Tiling, Building, Painting, Roof Repairs and Renovations. All your Building and Renovation needs in one place.">
+  		<meta name="keywords" content="Construction, Patrick Hove's Construction Company, Electrical, Building, Plumbing, Carpentry, Get a quote">
+  		<meta name="author" content="Joshua Daniel Kellerman">
+        <meta property="og:image" content="https://your-website-preview.co.za/img/logo2.png" />
+    </head>
+    <body>
+        <nav style="background-color:black;">
+            <div style="display:flex;justify-content: space-around;align-items: center;">
+                <div style="width:100%;" class="glowDivMain">
+                    <label onclick="quotePage()" style="margin:auto;padding:8px;width:100%;color:white;float:left;text-decoration: none;" >Get a quote</label>
+                </div>    
+                <div style="width:100%;" class="glowDivMain">
+                    <label onclick="home()" style="margin:auto;padding:8px;width:100%;color:white;float:left;text-decoration: none;" href="">Home Page</label>
+                </div>    
+                <div style="width:100%;" class="glowDivMain">
+                    <label onclick="gallery()" style="margin:auto;padding:8px;width:100%;color:white;float:left;text-decoration: none;" href="">Gallery</label>
+                </div>    
+                <div style="width:100%;" class="glowDivMain">
+                    <label onclick="about()" style="margin:auto;padding:8px;width:100%;color:white;float:left;text-decoration: none;" href="">About</label>
+                </div>    
+                <div style="width:100%;" class="glowDivMain">
+                    <label onclick="contact()" style="margin:auto;padding:8px;width:100%;color:white;float:left;text-decoration: none;" href="">Contact</label>
+                </div> 
+            </div>
+            <script>
+                const linkQ="http://localhost:4010/Patric_Hove's_Construction_Quote";
+                const linkH="http://localhost:4010/Patric_Hove's_Construction_Home";
+                const linkG="http://localhost:4010/Patric_Hove's_Construction_Gallery";
+                const linkA="http://localhost:4010/Patric_Hove's_Construction_About";
+                const linkC="http://localhost:4010/Patric_Hove's_Construction_Contact";
+                function quotePage()
+                {
+                    window.location.href=linkQ;
+                }
+                function home()
+                {
+                    window.location.href=linkH;
+                }
+                function gallery()
+                {
+                    window.location.href=linkG;
+                }
+                function about()
+                {
+                    window.location.href=linkA;
+                }
+                function contact()
+                {
+                    window.location.href=linkC;
+                }
+            </script>
+        </nav>
+      	<style>
+      		@media only screen and (max-width: 800px)
+          	{
+            	#h2A
+                {
+                  	display:none;
+                }
+              	#h4A
+                {
+                  	display:none;
+                }
+              	#h4B
+                {
+                  	display:none;
+                }
+              	#h2
+              	{
+              		font-size:15px;
+              	}
+              	.first
+              	{
+                  	width:95%;
+              	}
+              	button
+              	{
+                  	width:200px;
+                  	height:105px;
+              	}
+              	#temp
+              	{
+              		display:flex;
+                  	flex-direction:column;
+              	}
+              	input[type="file"]::file-selector-button
+				{
+    				width:200px;
+    				padding:5px;
+    				transition:0.2s;
+    				font-size:20px;
+				}
+              	.desc
+              	{
+              		height:50px; 
+                  	width:120px;
+                  	margin-top:auto;
+                  	margin-bottom:auto;
+              	}
+              	.descA
+            	{
+                	text-align:center;
+                  	display:flex;
+                  	justify-content:center;
+                  	width:5px;
+            	}
+              	.inputClass
+              	{
+              		width:220px;
+                  	height:25px;
+              	}
+              	.semicolon
+              	{
+              		width:5%;
+                  	justify-content:center;
+                  	text-align:center;
+                  	display:flex;
+                  	
+              	}
+              	.inputBox
+              	{
+              		width:60%;
+              	}
+              	.fontLogo
+              	{
+              		font-size:15px;
+                  	color:white;
+              	}
+              	.secondImgDiv
+              	{
+                  	width:100%;
+                  	justify-content:center;
+                  	display:flex;
+              	}
+              	.imgDiv
+              	{
+                  	width:33%;
+                  	
+                  	color:white;border:1px solid white;
+                  	display:flex;
+                  	align-items:center;
+              	}
+              	.pict
+              	{
+              		width:100%;
+                  	margin:0;
+                  	padding:0px;
+              	}
+            }
+          	.pict
+            {
+              	width:100%;
+                margin:0;
+                padding:0px;
+              	transition:1s;
+            }
+          	.pict:hover
+          	{
+          		padding:10px;
+              	background-color:rgba(255,255,255,0.5);
+               	border-radius:12px;
+              	border:3px solid white;
+          	}
+          	.desc
+            {
+              	height:50px; 
+                width:180px;
+            }
+          	.desc1
+            {
+              	height:50px; 
+                width:150px;
+            }
+          .fontLogo{color:white;}
+      	</style>
+        <main id="mainM" style="display:flex;justify-content: center;align-items: center;margin-top:50px;">
+            <div id="first" class="first">
+                <h2>Request A Quote Section</h2>
+                <h2 id="h2A">Hello and No Name Construction.</h2>
+                <h4 id="h4A">Below you will choose what work you would like done.<br>Take a look select what you need and we will contact you for further processing.</h4>
+                <h4 id="h4B">Please remember that you will not be asked to make any payments here.<br>
+                     After we access the job a quote with the price and time (to complete) will be sent to you.<br><br>Also there is an option to select how we contact you after your request,<br> so make sure to select your prefered method.
+              
+                </h4>
+                
+                <div style="width:70%; border-top: 1px solid black;margin:auto;border-bottom: 1px solid black;">
+                    <h4>How would you like us to make contact</h4>
+                    <div style="display:flex;justify-content: center;">    
+                        <div class="radio" style="display:flex;flex-direction: column;padding:20px;width:100px;">
+                            <input id="radio1" class="input" type="radio" name="option" value="phone">
+                            <label id="phone">Phone Call</label>
+                        </div>    
+                        <div class="radio" style="display:flex;flex-direction: column;padding:20px;width:100px;">
+                            <input id="radio2" type="radio" name="option" value="whatsapp">
+                            <label id="whats">WhatsApp</label>
+                        </div>  
+                        <div class="radio" style="display:flex;flex-direction: column;padding:20px;width:100px;">
+                            <input id="radio3" class="input" type="radio" name="option" value="email">
+                            <label id="email">Email</label>
+                        </div>  
+                        <div class="radio" style="display:flex;flex-direction: column;padding:20px;width:100px;">
+                            <input id="radio4" class="input" type="radio" name="option" value="any">
+                            <label id="email">Any</label>
+                        </div>  
+                    </div> 
+                       
+                </div>
+                <div>
+                    <h2 id="h2">Please select what you would like us to do</h2>
+                    <div id="main">
+                        <div id="temp">
+                            <div class="space">
+                                <button id="repairs">Repairs</button>
+                            </div>
+                            <div class="space">
+                                <button id="const">Construction or Renovations</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div id="contact" style="display:none;">   
+                    <div style="display:flex; flex-direction: column; text-align: left;width:35%;margin-left:8px;">
+                        <div class="desc">
+                            <label >Name</label>
+                        </div>
+                        <div class="desc">
+                            <label>Last Name</label>
+                        </div>
+                        <div class="desc">
+                            <label>Phone</label>
+                        </div>
+                        <div class="desc">
+                            <label>Email</label>
+                        </div>
+                    </div>
+                    <div class="semicolon" style="display:flex; flex-direction: column;">
+                        <div class="desc1">
+                            <label class="descA">:</label>
+                        </div>
+                        <div class="desc1">
+                            <label class="descA">:</label>
+                        </div>
+                        <div class="desc1">
+                            <label class="descA">:</label>
+                        </div>
+                        <div class="desc1">
+                            <label class="descA">:</label>
+                        </div>
+                    </div>
+                    <div style="display:flex; flex-direction: column;">
+                        <div class="inputBox" style="height:50px;">
+                            <input class="inputClass" id="name">
+                        </div>
+                        <div class="inputBox" style="height:50px;">
+                            <input class="inputClass" id="lname">
+                        </div>
+                        <div class="inputBox" style="height:50px;">
+                            <input class="inputClass" id="ph">
+                        </div>
+                        <div class="inputBox" style="height:50px;">
+                            <input class="inputClass" id="em" type="email">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </main>
+        <footer>
+            <div style="margin-top:50px; border-top:1px solid white; border-bottom:1px solid white; text-align: center;" class="secondImgDiv">
+                <div style="width:32%;">
+                    <label class="fontLogo">Facebook Page</label>    
+                    <a href="https://">
+                        <img class="pict" src="img/facebook.png" alt="facebook logo">
+                  	</a>
+                </div>
+              	 
+                <div style="width:32%;">
+                    <label class="fontLogo">Instagram Account</label> 
+                  	<a href="">
+                        <img class="pict" src="img/instagram.png" alt="instagram logo">
+               		</a>
+                </div>
+                <div style="width:32%;">
+                    <label class="fontLogo">WhatsApp</label> 
+                	<a href="https://wa.me/">
+                        <img class="pict" src="img/whatsapp.png" alt="whatsapp logo">
+                   	</a>
+                </div>
+            </div><br>
+            <div style="display:flex;">
+                <address style="width:70%; border:1px solid black;padding:10px;background-color: white;">
+                    <p>
+                        <label style="text-decoration: underline;">No Name</label><br>
+                        Contact Information<br>
+                        Cell : <a href="https://wa.me/"></a><br>
+                        Email : <a href="mailto:tomatoes602@gmail.com">@gmail.com</a>
+                        <br><br>
+                        Social Links<br>
+                        <img style="width:20px;height:20px;" src="img/whats.jpg" alt="WhatsApp logo">WhatsApp : <a href="https://wa.me/">1234</a><br>
+                        <img style="width:20px;height:20px;" src="img/fb.png" alt="facebook logo">Facebook : <a href="https:">No Name Construction FB</a><br>
+                        <img style="width:20px;height:20px;" src="img/inst.jpg" alt="instagram logo">Instagram : <a href="https:">No Name Construction Inst</a><br>
+                    </p>
+                </address>
+                <div style="right:0px;background-color: black; color:white;border:1px solid white; display:flex;flex-direction: column;width:30%;padding:5px; float:right;">    
+                    <label style="color:white; font-size:15px;">Website created by - <a href="mailto:tomatoes602@gmail.com" style="color:white; font-size:15px;">Medusa Tech</a><br>&#169;Copyright :</label>
+                    
+                    <label style="margin-top:50px;color:white;">Please reach out to us if you have any questions and if your looking to build your website</label>
+                </div>
+            </div>
+        </footer>
+      	<style>
+        	@media only screen and (max-width: 600px) 
+            {
+          		footer a 
+              	{
+              		font-size:12px;
+              	}
+              	footer label 
+              	{
+              		font-size:12px;
+              	}
+          	}
+      </style>
+        <script src="quote.js"></script>
+    </body>
+</html>
